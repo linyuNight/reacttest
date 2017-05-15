@@ -4,7 +4,7 @@ import "./Nice.css";
 class Nice extends Component {
   render() {
     return (
-      <div className="Nice">ffff</div>
+      <div className="content">{this.props.name}</div>
     );
   }
 }

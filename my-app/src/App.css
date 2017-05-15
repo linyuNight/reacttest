@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -22,3 +22,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
+.contain{
+  width:400px;
+  height:200px;
+  border:1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:nowrap;
+}
+
+/*.contain div{
+  width:100px;
+  height:20px;
+  background: #ccc;
+}*/
