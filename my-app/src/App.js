@@ -19,7 +19,7 @@ class App extends Component {
       <div className="contain">
         <Nice name="1"></Nice>
         <Nice name="2"></Nice>
-        <Nice name="4"></Nice>
+        <Nice name="3"></Nice>
       </div>
     );
   }
