@@ -4,6 +4,18 @@ import './App.css';
 import Nice from './Nice';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      name:0
+    }
+  }
+  _plus() {
+    this.setState({
+      name: ++this.state.name
+    })
+  }
+
   render() {
     return (
       //<div className="App">
@@ -17,9 +29,10 @@ class App extends Component {
       //  <Nice />
       //</div>
       <div className="contain">
-        <Nice name="1"></Nice>
-        <Nice name="2"></Nice>
-        <Nice name="3"></Nice>
+        <div>
+          <Nice name={this.state.name}></Nice>
+        </div>
+        <div onClick={this._plus.bind(this)}>{this.state.name}</div>
       </div>
     );
   }
